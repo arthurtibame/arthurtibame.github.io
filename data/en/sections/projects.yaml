@@ -30,14 +30,14 @@ projects:
   summary: Production-Grade Scheduling and Management.
   tags: ["professional", "Airflow", "crontab"]
 
-- name: Tensorflow
-  logo: /images/sections/projects/tensorflow.png
+- name: Automatic Feeder
+  logo: images/sections/projects/automatic-feeder.png
   role: Developer
-  timeline: "Jun 2018 - Present"
-  repo: https://github.com/tensorflow/tensorflow
+  timeline: "Jan 2021 - Present"
+  repo: https://github.com/arthurtibame/automatic-cat-feeder
   #url: ""
-  summary: An Open Source Machine Learning Framework for Everyone.
-  tags: ["professional", "machine-learning","academic"]
+  summary: Automation with Raspberry Pi with google drive as well as LINE
+  tags: ["IOT", "cloud","Line bot"]
 
 - name: Toha
   logo: /images/sections/projects/toha.png
