@@ -14,8 +14,8 @@ buttons:
   filter: "all"
 - name: Professional
   filter: "professional"
-- name: Academic
-  filter: "academic"
+- name: Line BOT
+  filter: "Line BOT"
 - name: Hobby
   filter: "hobby"
 
@@ -37,7 +37,7 @@ projects:
   repo: https://github.com/arthurtibame/automatic-cat-feeder
   #url: ""
   summary: Automation with Raspberry Pi with google drive as well as LINE
-  tags: ["IOT", "cloud","Line bot"]
+  tags: ["IOT", "cloud","Line BOT", "hobby"]
 
 - name: Toha
   logo: /images/sections/projects/toha.png
