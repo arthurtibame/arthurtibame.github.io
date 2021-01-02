@@ -39,6 +39,16 @@ projects:
   summary: Automation with Raspberry Pi with google drive as well as LINE
   tags: ["IOT", "cloud","Line BOT", "hobby"]
 
+- name: Datathon Competition
+  logo: images/sections/projects/automatic-feeder.png
+  role: Developer
+  timeline: "Sep 11 2020 - Sep 13 2020"
+  repo: https://github.com/arthurtibame/datathon_linechatbot
+  #url: ""
+  summary: Interface of connection with Line Chatbot
+  tags: ["cloud","Line BOT", "competition"]
+
+
 - name: Toha
   logo: /images/sections/projects/toha.png
   role: Owner
