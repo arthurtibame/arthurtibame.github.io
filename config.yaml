@@ -23,6 +23,8 @@ enableEmoji: true
 
 # Site parameters
 params:
+  background: "images/bar-backgroup.jpg"
+
   # GitHub repo URL of your site
   gitRepo: https://github.com/arthurtibame/arthurtibame.github.io
 
