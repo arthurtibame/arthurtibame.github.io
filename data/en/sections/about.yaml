@@ -8,32 +8,48 @@ section:
   template: sections/about.html
 
 # your designation
-designation: Software Engineer
+designation: Data Engineer
 # your company information
 company:
   name:  Modovision Co.
   url: "https://www.example.com"
 
 # your resume. this file path should be relative to you "static" directory
-resume: "files/resume.pdf"
+# resume: "files/resume.pdf"
 
 # a summary about you
-summary: 'I am a passionate software engineer with 2 years of working experience. '
+summary: 'I am a passionate data engineer with 2 years of working experience. '
 
 # your social links
 # give as many as you want. use font-awesome for the icons.
 socialLinks:
+- name: Email
+  icon: "fas fa-envelope"
+  url: "arthur8485@gmail.com"
+
 - name: Github
   icon: "fab fa-github"
   url: "https://github.com/arthurtibame"
 
+- name: LinkedIn
+  icon: "fab fa-linkedin"
+  url: "https://www.linkedin.com/in/shuli-lin-1679a9152/"
 # your soft skills
 # give the percentage between 50 to 100 with 5 intervals.
 # currently supported colors: blue, yellow, pink, green, sky, orange
 softSkills:
-- name: Leadership
-  percentage: 85
+- name: Airflow
+  percentage: 80
   color: blue
-- name: Team Work
+- name: Python
   percentage: 90
   color: yellow
+- name: Docker
+  percentage: 85
+  color: pink
+- name: Spark
+  percentage: 75
+  color: green
+- name: GCP
+  percentage: 75
+  color: blue
