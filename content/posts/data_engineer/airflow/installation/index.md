@@ -25,7 +25,7 @@ menu:
 --- 
 ### Step 1. Preparation
 Here I will take Ubuntu for an example. First of all, I will highly recommand you to use virtualenv (venv)
-```cmd
+```shell
 sudo apt update && \
  sudo apt install -y python3-venv 
 ```
@@ -35,7 +35,7 @@ sudo apt update && \
 ---
 ### Step 2. Create Python Environment
 Secondly create a folder airflow and create your env 
-```cmd
+```shell
 $ mkdir $HOME/airflow
  $ cd $HOME/airflow
  $ python3 -m venv env
@@ -50,7 +50,7 @@ $ mkdir $HOME/airflow
 ---
 ### Step 3. Install apache-airflow
 After install airflow by pip, try to type airflow and all configurations will appear in the folder
-```cmd
+```shell
 (env)$ pip install apache-airflow
 
  (env)$ airflow
@@ -59,7 +59,7 @@ After install airflow by pip, try to type airflow and all configurations will ap
 </br>  
 
 Your folder will involve files as follows:
-```cmd
+```shell
 ├── airflow.cfg
  ├── env
  ├── logs
@@ -73,7 +73,7 @@ Your folder will involve files as follows:
 ---
 ### Step 4. Initialize db and Create web user(default: sqlite)
 airflow.db (sqlite file) will be create after enter the following command
-```cmd
+```shell
 $ airflow db init
 ```
 
@@ -81,7 +81,7 @@ $ airflow db init
 </br>
 
 after sucessfully initialize database, we can start creating our admin user for airflow webserver
-```cmd
+```shell
 $ airflow users create \
       --username admin \
       --firstname FIRST_NAME \
@@ -95,12 +95,12 @@ $ airflow users create \
 ---
 ### Step 5. Start webserver and scheduler
 Open two new command line terminals
-```cmd
+```shell
 $ airflow webserver
 ```
 </br>
  
-```cmd
+```shell
 $ airflow scheduler
 ```
 </br>
