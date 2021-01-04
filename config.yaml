@@ -20,6 +20,9 @@ markup:
 
 # Enable global emoji support
 enableEmoji: true
+# Disqus forum
+
+disqusShortname: arthurtibame
 
 # Site parameters
 params:
