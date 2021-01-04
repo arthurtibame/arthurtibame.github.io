@@ -82,6 +82,6 @@ $ airflow scheduler
 ```
 
 ### Step 6. Enter your Airflow website
-Open your broswer and Enter URL: localhost:8080
+Open your broswer and Enter URL: [localhost:8080](localhost:8080)
 
 ![](/posts/data_engineer/airflow/installation/result.png)
