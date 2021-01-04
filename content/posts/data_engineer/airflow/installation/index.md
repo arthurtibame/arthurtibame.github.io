@@ -14,10 +14,14 @@ menu:
 ## What is Airflow ?
 > [**Airflow**](https://airflow.apache.org/) is an open-source workflow management platform written in [Python](https://www.python.org/)
 
+</br>
+
 ## Requirements
 - Python3
 - Any operating system (Linux, Windows, MacOS)
 
+</br>
+</br>
 --- 
 ### Step 1. Preparation
 Here I will take Ubuntu for an example. First of all, I will highly recommand you to use virtualenv (venv)
@@ -25,8 +29,9 @@ Here I will take Ubuntu for an example. First of all, I will highly recommand yo
 sudo apt update && \
  sudo apt install -y python3-venv 
 ```
-  
-  
+</br>
+</br> 
+
 ---
 ### Step 2. Create Python Environment
 Secondly create a folder airflow and create your env 
@@ -39,7 +44,8 @@ $ mkdir $HOME/airflow
  # update pip 
  (env)$ pip3 install -U pip
 ```
-  
+</br>
+</br>  
   
 ---
 ### Step 3. Install apache-airflow
@@ -49,7 +55,8 @@ After install airflow by pip, try to type airflow and all configurations will ap
 
  (env)$ airflow
 ```
-  
+</br>
+</br>  
 
 Your folder will involve files as follows:
 ```cmd
@@ -59,7 +66,9 @@ Your folder will involve files as follows:
  ├── unittests.cfg
  └── webserver_config.py
 ```
-  
+
+</br>
+</br> 
   
 ---
 ### Step 4. Initialize db and Create web user(default: sqlite)
@@ -67,7 +76,9 @@ airflow.db (sqlite file) will be create after enter the following command
 ```cmd
 $ airflow db init
 ```
-  
+
+</br>
+</br>
 
 after sucessfully initialize database, we can start creating our admin user for airflow webserver
 ```cmd
@@ -78,21 +89,22 @@ $ airflow users create \
       --role Admin \
       --email admin@example.org
 ```
-  
-  
+</br>
+</br>  
+
 ---
 ### Step 5. Start webserver and scheduler
 Open two new command line terminals
 ```cmd
 $ airflow webserver
 ```
-   
-
+</br>
+ 
 ```cmd
 $ airflow scheduler
 ```
-  
-  
+</br>
+
 ---  
 ### Step 6. Enter your Airflow website
 Open your broswer and Enter URL: [localhost:8080](localhost:8080)
