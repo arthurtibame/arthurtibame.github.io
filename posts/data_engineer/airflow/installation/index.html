@@ -4,20 +4,22 @@
 <button class="navbar-toggler navbar-light" id=toc-toggler type=button onclick=toggleTOC()>
 <span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse lang-selector" id=top-nav-items><ul class="navbar-nav ml-auto"></ul></div></div><img src=/assets/images/main-logo.png class=d-none id=main-logo>
 <img src=/assets/images/inverted-logo.png class=d-none id=inverted-logo></nav><section class=sidebar-section id=sidebar-section><div class=sidebar-holder><div class=sidebar id=sidebar><input type=text placeholder=Search data-search id=search-box><div class=sidebar-tree><ul class=tree id=tree><li id=list-heading><a href=/posts data-filter=all>Posts</a></li><div class=subtree><li><a href=/posts/introduction/>Introduction</a></li><li><i class="fas fa-minus-circle"></i><a class=active href=/posts/data_engineer/>Data Engineer</a><ul class=active><li><i class="fas fa-minus-circle"></i><a class=active href=/posts/data_engineer/airflow/>Airflow</a><ul class=active><li><a class=active href=/posts/data_engineer/airflow/installation/>Installation</a></li></ul></li></ul></li><li><i class="fas fa-plus-circle"></i><a href=/posts/side_projects/>Side Projects</a><ul><li><i class="fas fa-plus-circle"></i><a href=/posts/side_projects/automatic_feeder/>Automatic Feeder</a><ul><li><a href=/posts/side_projects/automatic_feeder/introduction/>Introduciton</a></li><li><a href=/posts/side_projects/automatic_feeder/raspberry-pi/>Raspberry pi</a></li></ul></li></ul></li></div></ul></div></div></div></section><section class=content-section id=content-section><div class=content><div class="container p-0 read-area"><div class="hero-area col-sm-12" id=hero-area style=background-image:url(https://arthurtibame.github.io/posts/data_engineer/airflow/installation/airflow.svg)></div><div class=page-content><div class="author-profile ml-auto align-self-lg-center"><img class=rounded-circle src=/images/arthur.jpg><h5 class=author-name>Arthur Lin</h5><p>January 4, 2021</p></div><div class=title><h1>Airflow Installation</h1></div><div class=post-content id=post-content><h2 id=what-is-airflow->What is Airflow ?</h2><blockquote><p><a href=https://airflow.apache.org/><strong>Airflow</strong></a> is an open-source workflow management platform written in <a href=https://www.python.org/>Python</a></p></blockquote><h2 id=requirements>Requirements</h2><ul><li>Python3</li><li>Any operating system (Linux, Windows, MacOS)</li></ul><hr><h3 id=step-2-create-python-environment>Step 2. Create Python Environment</h3><p>Secondly create a folder airflow and create your env</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>$ mkdir $HOME/airflow
- $ cd $HOME/airflow
- $ python3 -m venv env
- $ source env/bin/activate
- 
- <span style=color:#75715e># update pip </span>
- <span style=color:#f92672>(</span>env<span style=color:#f92672>)</span>$ pip3 install -U pip
+$ cd $HOME/airflow
+$ python3 -m venv env
+$ source env/bin/activate
+
+<span style=color:#75715e># update pip </span>
+<span style=color:#f92672>(</span>env<span style=color:#f92672>)</span>$ pip3 install -U pip
 </code></pre></div><hr><h3 id=step-3-install-apache-airflow>Step 3. Install apache-airflow</h3><p>After install airflow by pip, try to type airflow and all configurations will appear in the folder</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=color:#f92672>(</span>env<span style=color:#f92672>)</span>$ pip install apache-airflow
 
- <span style=color:#f92672>(</span>env<span style=color:#f92672>)</span>$ airflow
-</code></pre></div><p>Your folder will involve files as follows:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>├── airflow.cfg
- ├── env
- ├── logs
- ├── unittests.cfg
- └── webserver_config.py
+<span style=color:#f92672>(</span>env<span style=color:#f92672>)</span>$ airflow
+</code></pre></div><p>Your folder will involve files as follows:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>$ tree
+
+├── airflow.cfg
+├── env
+├── logs
+├── unittests.cfg
+└── webserver_config.py
 </code></pre></div><hr><h3 id=step-4-initialize-db-and-create-web-userdefault-sqlite>Step 4. Initialize db and Create web user(default: sqlite)</h3><p>airflow.db (sqlite file) will be create after enter the following command</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>$ airflow db init
 </code></pre></div><p>after sucessfully initialize database, we can start creating our admin user for airflow webserver</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>$ airflow users create <span style=color:#ae81ff>\
 </span><span style=color:#ae81ff></span>      --username admin <span style=color:#ae81ff>\
