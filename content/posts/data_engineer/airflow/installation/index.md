@@ -24,35 +24,35 @@ menu:
 Here I will take Ubuntu for an example. First of all, I will highly recommand you to use virtualenv (venv)
 ```cmd
 sudo apt update && \
-sudo apt install -y python3-venv 
+  sudo apt install -y python3-venv 
 ```
 ### Step 2. Create Python Environment
 Secondly create a folder airflow and create your env
 
 ```cmd
 $ mkdir $HOME/airflow
-$ cd $HOME/airflow
-$ python3 -m venv env
-$ source env/bin/activate
+  $ cd $HOME/airflow
+  $ python3 -m venv env
+  $ source env/bin/activate
 
-# update pip 
-(env)$ pip3 install -U pip
+  # update pip 
+  (env)$ pip3 install -U pip
 ```
 ### Step 3. Install apache-airflow
 After install airflow by pip, try to type airflow and all configurations will appear in the folder
 ```cmd
 (env)$ pip install apache-airflow
 
-(env)$ airflow
+  (env)$ airflow
 ```
 
 Your folder will involve files as follows:
 ```cmd
 ├── airflow.cfg
-├── env
-├── logs
-├── unittests.cfg
-└── webserver_config.py
+  ├── env
+  ├── logs
+  ├── unittests.cfg
+  └── webserver_config.py
 ```
 
 ### Step 4. Initialize db and Create web user(default: sqlite)
