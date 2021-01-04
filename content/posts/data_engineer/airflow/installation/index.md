@@ -27,7 +27,7 @@ menu:
 Here I will take Ubuntu for an example. First of all, I will highly recommand you to use virtualenv (venv)
 ```shell
 sudo apt update && \
- sudo apt install -y python3-venv 
+sudo apt install -y python3-venv 
 ```
 </br>
 </br> 
@@ -37,12 +37,12 @@ sudo apt update && \
 Secondly create a folder airflow and create your env 
 ```shell
 $ mkdir $HOME/airflow
- $ cd $HOME/airflow
- $ python3 -m venv env
- $ source env/bin/activate
- 
- # update pip 
- (env)$ pip3 install -U pip
+$ cd $HOME/airflow
+$ python3 -m venv env
+$ source env/bin/activate
+
+# update pip 
+(env)$ pip3 install -U pip
 ```
 </br>
 </br>  
@@ -53,18 +53,20 @@ After install airflow by pip, try to type airflow and all configurations will ap
 ```shell
 (env)$ pip install apache-airflow
 
- (env)$ airflow
+(env)$ airflow
 ```
 </br>
 </br>  
 
 Your folder will involve files as follows:
 ```shell
+$ tree
+
 ├── airflow.cfg
- ├── env
- ├── logs
- ├── unittests.cfg
- └── webserver_config.py
+├── env
+├── logs
+├── unittests.cfg
+└── webserver_config.py
 ```
 
 </br>
