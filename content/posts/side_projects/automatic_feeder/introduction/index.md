@@ -7,7 +7,7 @@ menu:
   sidebar:
     name: Introduciton
     identifier: introduction
-    parent: automatic-feeder
+    parent: side-projects
     weight: 10
 ---
 
