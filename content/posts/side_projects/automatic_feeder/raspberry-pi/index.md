@@ -7,7 +7,7 @@ menu:
   sidebar:
     name: Raspberry pi
     identifier: Raspberry-pi
-    parent: side-projects
+    parent: automatic-feeder
     weight: 10
 ---
 
