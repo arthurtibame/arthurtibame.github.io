@@ -59,7 +59,7 @@ default_args = {
 ```
 ---
 
-#### **Keys explanation:**
+**Keys explanation:**
 > **owner** (<span style="color:green">String</span>): who owns this DAG, the name will appear in the list of dags web page
 
 > **depends_on_past** (<span style="color:green">Boolean</span>): It is for to check whether to run a task or not depending of its previous DAG run(last run).
@@ -113,7 +113,7 @@ dag = DAG(
 ```
 ---
 
-#### **Keys explanation:**
+**Keys explanation:**
 > **dag_id** (<span style='color:green'>String</span>): set up your dag id which will appear in web page of DAGs.
 
 > **default_args** (<span style='color:green'>Dictionary</span>): The dictionary we just define in previous step.
