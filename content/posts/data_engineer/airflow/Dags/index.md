@@ -21,7 +21,8 @@ Directed Acyclic Graph (DAG)
 2. Acyclic - No task can create data that goes on to reference itself. This could cause an infinite loop that would be, um, it’d be bad. Don’t do that.
 3. Graph - All tasks are laid out in a clear structure with discrete processes occurring at set points and clear relationships made to other tasks.
 
-## Learning from an [exmaple](https://airflow.apache.org/docs/apache-airflow/stable/tutorial.html)
+---
+### Learning from an [exmaple](https://airflow.apache.org/docs/apache-airflow/stable/tutorial.html)
 
 ### Step 1. Import required library
 ```python
@@ -51,6 +52,8 @@ default_args = {
     'trigger_rule': 'all_success'
 }
 ```
+---
+
 #### **Keys explanation:**
 > **owner** (<span style="color:green">String</span>): who owns this DAG, the name will appear in the list of dags web page
 > **depends_on_past** (<span style="color:green">Boolean</span>): It is for to check whether to run a task or not depending of its previous DAG run(last run).
@@ -72,6 +75,8 @@ default_args = {
 > **sla_miss_callback**(<span style="color:green">callable</span>)
 > **trigger_rule**(<span style="color:green">String</span>): All operators have a <span style='color:red'>trigger_rule</span> argument which defines the rule by which the generated task get triggered. The default value for <span style='color:red'>trigger_rule</span> is <span style='color:red'>all_success</span> and can be defined as "trigger this task when all directly upstream tasks have succeeded". All other rules described here are based on direct parent tasks and are values that can be passed to any operator while creating tasks:
 
+---
+
 ### Step 3. Create a DAG Object
 ```python
 dag = DAG(
@@ -83,6 +88,8 @@ dag = DAG(
     tags=['example'],
 )
 ```
+---
+
 #### **Keys explanation:**
 > **dag_id** (<span style='color:green'>String</span>): set up your dag id which will appear in web page of DAGs.
 > **default_args** (<span style='color:green'>Dictionary</span>): The dictionary we just define in previous step.
@@ -91,5 +98,5 @@ dag = DAG(
 > **start_date** (<span style='color:green'>datetime obj.</span>): Set up the initial/starting date.
 > ***tags*** (<span style='color:green'>Array</span>): List of tags which will also show in web page of DAGs.
 
-
+---
 
