@@ -73,7 +73,7 @@ $ tree
   
 ---
 ### Step 4. Initialize db and Create web user(default: sqlite)
-airflow.db (sqlite file) will be create after enter the following command
+airflow.db (sqlite file) will be created after enter the following command
 ```shell
 $ airflow db init
 ```
