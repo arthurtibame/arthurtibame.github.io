@@ -112,3 +112,27 @@ $ airflow scheduler
 Open your broswer and Enter URL: [localhost:8080](localhost:8080)
 
 ![](/posts/data_engineer/airflow/installation/result.png)
+
+### Optional 1. Turn off official examples
+[line 98](https://raw.githubusercontent.com/arthurtibame/airflow-tutorial/main/airflow.cfg)
+
+>> ~~~load_examples = True~~~
+>> load_examples = False
+
+### Optional 2. Change type of database
+[line 29](https://raw.githubusercontent.com/arthurtibame/airflow-tutorial/main/airflow.cfg)
+
+>> ~~sql_alchemy_conn = sqlite:////home/arthur/airflow/airflow.db~~
+>> sql_alchemy_conn = postgresql+psycopg2://USERNAME:PASSWORD@IP_ADDRESS:PORT/DATABASE
+
+After changing the config, you should install required pip libraries and **reinitialize database as well as creating user for airflow webserver** in Step 5.
+```shell
+(env)$ pip install apache-airflow[postgresql]
+```
+
+### Reference 
+To get more useful information related to the configuation
+please check the official website [here](https://airflow.apache.org/docs/apache-airflow/stable/howto/index.html)
+
+
+
