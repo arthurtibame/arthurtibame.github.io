@@ -8,7 +8,7 @@ menu:
     name: Installation
     identifier: airflow-installation
     parent: airflow
-    weight: 10
+    weight: 9
 ---
 
 ## What is Airflow ?

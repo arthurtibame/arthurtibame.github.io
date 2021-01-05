@@ -10,7 +10,7 @@ menu:
     parent: airflow
     weight: 10
 ---
-# Airflow Contents
+## Airflow Contents
 1. [Installation](https://arthurtibame.github.io/posts/data_engineer/airflow/installation/)
-2. Dags
+2. [Dags]((https://arthurtibame.github.io/posts/data_engineer/airflow/dags/))
 
