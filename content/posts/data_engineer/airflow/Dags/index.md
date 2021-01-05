@@ -51,7 +51,7 @@ default_args = {
     'trigger_rule': 'all_success'
 }
 ```
-**Keys explanation:**
+#### **Keys explanation:**
 - **owner** (<span style="color:green">String</span>): who owns this DAG, the name will appear in the list of dags web page
 - **depends_on_past** (<span style="color:green">Boolean</span>): It is for to check whether to run a task or not depending of its previous DAG run(last run).
 - **email** (<span style="color:green">Array</span>): List of email address to send if success
@@ -83,13 +83,13 @@ dag = DAG(
     tags=['example'],
 )
 ```
-**Keys explanation:**
+#### **Keys explanation:**
 - **dag_id** (<span style='color:green'>String</span>): set up your dag id which will appear in web page of DAGs.
 - **default_args** (<span style='color:green'>Dictionary</span>): The dictionary we just define in previous step.
 - **description** (<span style='color:green'>String</span>): description of this DAG
 - **schedule_interval** (<span style='color:green'>timedelta</span> or <span style='color:green'>String</span>): the scheduler interval here, there are two main options to set up. I will highly recommand to use the following option [here](https://crontab.guru/)
 - **start_date** (<span style='color:green'>datetime obj.</span>): Set up the initial/starting date.
-- **tags** (<span style='color:green'>Array</span>): List of tags which will also show in web page of DAGs.
+- ***tags*** (<span style='color:green'>Array</span>): List of tags which will also show in web page of DAGs.
 
 
 
