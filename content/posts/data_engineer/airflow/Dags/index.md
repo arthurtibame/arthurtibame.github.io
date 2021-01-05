@@ -10,16 +10,17 @@ menu:
     parent: airflow
     weight: 10
 ---
+
 ## Airflow Contents
-1. [Installation](https://arthurtibame.github.io/posts/data_engineer/airflow/installation/)
-2. [Dags]((https://arthurtibame.github.io/posts/data_engineer/airflow/dags/))
+> 1. [Installation](https://arthurtibame.github.io/posts/data_engineer/airflow/installation/)
+> 2. [Dags]((https://arthurtibame.github.io/posts/data_engineer/airflow/dags/))
 
 ## What is DAG
 Directed Acyclic Graph (DAG)
 
-1. Directed - If multiple tasks exist, each must have at least one defined upstream (previous) or downstream (subsequent) tasks, although they could easily have both.
-2. Acyclic - No task can create data that goes on to reference itself. This could cause an infinite loop that would be, um, it’d be bad. Don’t do that.
-3. Graph - All tasks are laid out in a clear structure with discrete processes occurring at set points and clear relationships made to other tasks.
+> 1. Directed - If multiple tasks exist, each must have at least one defined upstream (previous) or downstream (subsequent) tasks, although they could easily have both.
+> 2. Acyclic - No task can create data that goes on to reference itself. This could cause an infinite loop that would be, um, it’d be bad. Don’t do that.
+> 3. Graph - All tasks are laid out in a clear structure with discrete processes occurring at set points and clear relationships made to other tasks.
 
 ---
 ### Learning from an [exmaple](https://airflow.apache.org/docs/apache-airflow/stable/tutorial.html)
