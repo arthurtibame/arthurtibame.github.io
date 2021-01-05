@@ -60,43 +60,43 @@ default_args = {
 ---
 
 **Keys explanation:**
-> **owner** (<span style="color:green">String</span>): who owns this DAG, the name will appear in the list of dags web page
+> **`owner`** (String): who owns this DAG, the name will appear in the list of dags web page
 
-> **depends_on_past** (<span style="color:green">Boolean</span>): It is for to check whether to run a task or not depending of its previous DAG run(last run).
+> **`depends_on_past`** (Boolean): It is for to check whether to run a task or not depending of its previous DAG run(last run).
 
-> **email** (<span style="color:green">Array</span>): List of email address to send if success
+> **`email`** (Array): List of email address to send if success
 
-> **email_on_failure** (<span style="color:green">Boolean</span>): If failed any task send a notification by email.
+> **`email_on_failure`** (Boolean): If failed any task send a notification by email.
 
-> **email_on_retry** (<span style="color:green">Boolean</span>): If occurs retrying any task, send a notification by email.
+> **`email_on_retry`** (Boolean): If occurs retrying any task, send a notification by email.
 
-> **retries** (<span style="color:green">Int</span>): The number of retry if any task in DAG is failed
+> **`retries`** (Int): The number of retry if any task in DAG is failed
 
-> **retry_delay** (<span style="color:green">timedelta Obj.</span>): The interval between retries
+> **`retry_delay`** (timedelta Obj.): The interval between retries
 
-> **queue**: Scheduler sent task to executor to run on the queue.
+> **`queue`**: Scheduler sent task to executor to run on the queue.
 
-> **pool**: it can be used to <span style="color:red">**limit the execution parallelism**</span> on arbitrary sets of tasks
+> **`pool`**: it can be used to **`limit the execution parallelism`** on arbitrary sets of tasks
 
-> **priority_weight** (<span style="color:green">Int</span>): The priority of the editing DAG
+> **`priority_weight`** (Int): The priority of the editing DAG
 
-> **end_date** (<span style="color:green">datetime Obj.</span>): The deadline of the task
+> **`end_date`** (datetime Obj.): The deadline of the task
 
-> **wait_for_downstream** (<span style="color:green">Boolean</span>): if you set <span style="color:red">**True**</span> The task instances directly upstream from the task need to be in a **sucess** state.
+> **`wait_for_downstream`** (Boolean): if you set **`True`** The task instances directly upstream from the task need to be in a **`sucess`** state.
 
-> **sla** (<span style="color:green">timedelta Obj</span>): Servuce Level Agreements(SLA), or time by which a task or DAG should have succeeded, can be set at a task level as a <span style="color:red">**timedelta**</span> If one or many instances have not succeeded by that time, an alert email is sent detailing the list of tasks that missed their SLA.
+> **`sla`** (timedelta Obj): Servuce Level Agreements(SLA), or time by which a task or DAG should have succeeded, can be set at a task level as a **`timedelta`** If one or many instances have not succeeded by that time, an alert email is sent detailing the list of tasks that missed their SLA.
 
-> **execution_timeout** (<span style="color:green">timedelta Obj.</span>): Max time allowed for the execution of this task instance, if it goes beyond it will raise and fail.
+> **`execution_timeout`** (timedelta Obj.): Max time allowed for the execution of this task instance, if it goes beyond it will raise and fail.
 
-> **on_failure_callback**(<span style="color:green">callable</span>):  A function to be called when a task instance of this task fails. a context dictionary is passed as a single parameter to this function. Context contains references to related objects to the task instance and is documented under the macros section of the API.
+> **`on_failure_callback`**(callable):  A function to be called when a task instance of this task fails. a context dictionary is passed as a single parameter to this function. Context contains references to related objects to the task instance and is documented under the macros section of the API.
 
-> **on_success_callback**(<span style="color:green">callable</span>): much like the <span style="color:red">on_failure_callback</span> except that it is executed when success occur.
+> **`on_success_callback`**(callable): much like the `on_failure_callback` except that it is executed when success occur.
 
-> **on_retry_callback**(<span style="color:green">callable</span>): much like the <span style="color:red">on_failure_callback</span> except that it is executed when retries occur.
+> **`on_retry_callback`**(callable): much like the `on_failure_callback`except that it is executed when retries occur.
 
-> **sla_miss_callback**(<span style="color:green">callable</span>)
+> **`sla_miss_callback`**(callable)
 
-> **trigger_rule**(<span style="color:green">String</span>): All operators have a <span style='color:red'>trigger_rule</span> argument which defines the rule by which the generated task get triggered. The default value for <span style='color:red'>trigger_rule</span> is <span style='color:red'>all_success</span> and can be defined as "trigger this task when all directly upstream tasks have succeeded". All other rules described here are based on direct parent tasks and are values that can be passed to any operator while creating tasks:
+> **`trigger_rule`**(String): All operators have a `trigger_rule` argument which defines the rule by which the generated task get triggered. The default value for `trigger_rule` is `all_successand` can be defined as "trigger this task when all directly upstream tasks have succeeded". All other rules described here are based on direct parent tasks and are values that can be passed to any operator while creating tasks:
 
 ---
 
@@ -114,17 +114,17 @@ dag = DAG(
 ---
 
 **Keys explanation:**
-> **dag_id** (<span style='color:green'>String</span>): set up your dag id which will appear in web page of DAGs.
+> **dag_id** (String): set up your dag id which will appear in web page of DAGs.
 
-> **default_args** (<span style='color:green'>Dictionary</span>): The dictionary we just define in previous step.
+> **default_args** (Dictionary): The dictionary we just define in previous step.
 
-> **description** (<span style='color:green'>String</span>): description of this DAG
+> **description** (String): description of this DAG
 
-> **schedule_interval** (<span style='color:green'>timedelta</span> or <span style='color:green'>String</span>): the scheduler interval here, there are two main options to set up. I will highly recommand to use the following option [here](https://crontab.guru/)
+> **schedule_interval** (timedelta or String): the scheduler interval here, there are two main options to set up. I will highly recommand to use the following option [here](https://crontab.guru/)
 
-> **start_date** (<span style='color:green'>datetime obj.</span>): Set up the initial/starting date.
+> **start_date** (datetime obj.): Set up the initial/starting date.
 
-> ***tags*** (<span style='color:green'>Array</span>): List of tags which will also show in web page of DAGs.
+> ***tags*** (Array): List of tags which will also show in web page of DAGs.
 
 
 ---
