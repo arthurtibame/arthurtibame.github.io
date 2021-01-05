@@ -19,7 +19,7 @@ $ source env/bin/activate
 ├── logs
 ├── unittests.cfg
 └── webserver_config.py
-</code></pre></div><hr><h3 id=step-4-initialize-db-and-create-web-userdefault-sqlite>Step 4. Initialize db and Create web user(default: sqlite)</h3><p>airflow.db (sqlite file) will be create after enter the following command</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>$ airflow db init
+</code></pre></div><hr><h3 id=step-4-initialize-db-and-create-web-userdefault-sqlite>Step 4. Initialize db and Create web user(default: sqlite)</h3><p>airflow.db (sqlite file) will be created after enter the following command</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>$ airflow db init
 </code></pre></div><p>after sucessfully initialize database, we can start creating our admin user for airflow webserver</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>$ airflow users create <span style=color:#ae81ff>\
 </span><span style=color:#ae81ff></span>      --username admin <span style=color:#ae81ff>\
 </span><span style=color:#ae81ff></span>      --firstname FIRST_NAME <span style=color:#ae81ff>\
