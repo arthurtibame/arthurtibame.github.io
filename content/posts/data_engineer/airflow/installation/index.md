@@ -61,7 +61,6 @@ After install airflow by pip, try to type airflow and all configurations will ap
 Your folder will involve files as follows:
 ```shell
 $ tree
-
 ├── airflow.cfg
 ├── env
 ├── logs
@@ -116,7 +115,7 @@ Open your broswer and Enter URL: [localhost:8080](localhost:8080)
 ### Optional 1. Turn off official examples
 [line 98](https://github.com/arthurtibame/airflow-tutorial/blob/main/airflow.cfg)
 
->> ~~~load_examples = True~~~ \
+>> ~~load_examples = True~~ \
 
 >> load_examples = False
 
@@ -133,8 +132,8 @@ After changing the config, you should install required pip libraries and **reini
 ```
 
 ## Reference 
-### To get more useful information related to the configuation
-### please check the official website [here](https://airflow.apache.org/docs/apache-airflow/stable/howto/index.html)
+To get more useful information related to the configuation
+please check the official website [here](https://airflow.apache.org/docs/apache-airflow/stable/howto/index.html)
 
 
 
