@@ -44,17 +44,17 @@ Docker containers that run on Docker Engine:
 
 ---
 
-#### Step 1.
+### Step 1. Install from apt
 ```shell
 $ sudo apt update && \
 $ sudo apt install -y docker.io
 ```
-#### Step 2.
+### Step 2. Start service and enable running when start OS
 ```shell
 $ sudo systemctl start docker.service
 $ sudo systemctl enable docker.service
 ```
-#### Step 3. check whether it is running or not
+### Step 3. check whether it is running or not
 ```shell
 $ docker run hello-world
 Hello from Docker!
