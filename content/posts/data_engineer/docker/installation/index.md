@@ -12,17 +12,16 @@ menu:
 ---
 
 ## What is Docker?
-[Docker](https://www.docker.com/)
 
-> Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers. Containers are isolated from one another and bundle their own software, libraries and configuration files; they can communicate with each other through well-defined channels.
+> [Docker](https://www.docker.com/) is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers. Containers are isolated from one another and bundle their own software, libraries and configuration files; they can communicate with each other through well-defined channels.
 
 ## What is Docker Engine?
 
 Docker Engine is a client-server application with these major components:
 
 - A server which is a type of long-running program called a daemon process (the dockerd command).
-- A REST API which specifies interfaces that programs can use to talk to the daemon and instruct it what to do.
-- A command line interface (CLI) client (the docker command).
+- A [REST API](https://en.wikipedia.org/wiki/Overview_of_RESTful_API_Description_Languages) which specifies interfaces that programs can use to talk to the daemon and instruct it what to do.
+- A [command line interface (CLI)](https://en.wikipedia.org/wiki/Command-line_interface) client (the docker command).
   
 ![](https://docs.docker.com/engine/images/engine-components-flow.png)
 
@@ -39,8 +38,8 @@ Docker containers that run on Docker Engine:
 
 
 ## Requirements
-- Ubuntu (recommanded)
-- Windows
+- [Ubuntu (recommanded)](https://ubuntu.com/)
+- [Windows](https://www.microsoft.com/en-us/windows)
 - MacOS
 
 ---
@@ -80,6 +79,7 @@ For more examples and ideas, visit:
  https://docs.docker.com/get-started/
 ```
 
-
+### Reference:
+[Docker official](https://www.docker.com/)
 
 
